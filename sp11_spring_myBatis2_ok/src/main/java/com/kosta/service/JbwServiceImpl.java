@@ -8,33 +8,33 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.kosta.controller.HomeController;
-import com.kosta.dao.UserDAOImpl;
-import com.kosta.dto.UserDTO;
+import com.kosta.dao.JbwDAOImpl;
+import com.kosta.dto.JbwDTO;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class JbwServiceImpl implements JbwService {
 	
 	@Autowired
-	private UserDAOImpl dao;
+	private JbwDAOImpl dao;
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	@Override
-	public List<UserDTO> userList() {
+	public List<JbwDTO> userList() {
 		logger.info("list 액션 입니다.");
-		List<UserDTO> List = dao.getUsers();
+		List<JbwDTO> List = dao.getUsers();
 		return List;
 	}
 
 	@Override
-	public void insert(UserDTO dto) {
+	public void insert(JbwDTO dto) {
 		logger.info("insert 액션 입니다.");
 		dao.insertUsers(dto);	
 		
 	}
 
 	@Override
-	public void update(UserDTO dto) {
+	public void update(JbwDTO dto) {
 		logger.info("update 액션 입니다.");
 		String pwd = dto.getPassword();
 		dao.updateUsers(dto);	
