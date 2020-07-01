@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.kosta.dao.UserDAOImpl;
-import com.kosta.dto.UserDTO;
-import com.kosta.service.UserServiceImpl;
+import com.kosta.dao.JbwDAOImpl;
+import com.kosta.dto.JbwDTO;
+import com.kosta.service.JbwServiceImpl;
 
 /**
  * Handles requests for the application home page.
@@ -27,7 +27,7 @@ import com.kosta.service.UserServiceImpl;
 public class HomeController {
 	
 	@Autowired
-	private UserServiceImpl service;
+	private JbwServiceImpl service;
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
@@ -53,7 +53,7 @@ public class HomeController {
 		
 		ModelAndView mav = new ModelAndView();
 		
-		List<UserDTO> userList = service.userList();
+		List<JbwDTO> userList = service.userList();
 		
 		mav.addObject("list", userList);
 		mav.setViewName("main");		
@@ -67,7 +67,7 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/insert")
-	public String insert(@ModelAttribute UserDTO dto) {
+	public String insert(@ModelAttribute JbwDTO dto) {
 		System.out.println(dto.getId()+" "+dto.getName()+" "+dto.getPassword());
 		service.insert(dto);
 		return "redirect:main.do";
@@ -81,7 +81,7 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/update")
-	public String update(@ModelAttribute UserDTO dto) {
+	public String update(@ModelAttribute JbwDTO dto) {
 		System.out.println(dto.getId()+" "+dto.getName()+" "+dto.getPassword());
 		service.update(dto);	
 		return "redirect:main.do";
