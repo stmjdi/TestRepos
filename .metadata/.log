@@ -2162,3 +2162,10 @@ java.lang.Exception: The project description file (.project) for 'Servers' is mi
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-06 18:20:38.078
 !MESSAGE executing callback sts4.classpath.TiLuWEWf SUCCESS [done]
+
+!ENTRY org.eclipse.core.resources 2 2 2020-07-06 18:25:38.168
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2020-07-06 18:25:38.169
+!MESSAGE The project description file (.project) for 'Servers' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2020-07-06 18:25:38.169
+!MESSAGE The project description file (.project) for 'testGit' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
