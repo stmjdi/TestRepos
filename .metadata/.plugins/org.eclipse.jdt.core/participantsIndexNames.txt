@@ -1,9 +1,0 @@
-INDEX VERSION 1.131
-/home/parkjinsu/문서/GitHub/TestRepos/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1194063249.index
-/testProj/sources
-/home/parkjinsu/문서/GitHub/TestRepos/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4194095463.index
-/testProj/src
-/home/parkjinsu/문서/GitHub/TestRepos/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4084839558.index
-/testGit/src/main/java
-/home/parkjinsu/문서/GitHub/TestRepos/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3483672371.index
-/testProj/com.spring
