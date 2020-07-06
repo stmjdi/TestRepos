@@ -1,0 +1,10 @@
+INDEX VERSION 1.4+/home/parkjinsu/문서/GitHub/TestRepos/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3572759949.index
+4084839558.index
+4240444482.index
+3385300504.index
+3076568432.index
+1620858422.index
+1194063249.index
+407621670.index
+357932355.index
